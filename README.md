@@ -27,7 +27,7 @@ target # Compiled code and test reports
 
 ## ⚙️ Setup Instructions
 1. Clone this repository 
-   git clone https://github.com/your-username/Demo_LarkLabs.git
+   git clone https://github.com/Wasifa12/Demo_LarkLabs.git
 2. Import into Eclipse as a Maven Project. Then,
 3. Right-click the Runner class → Run As → JUnit Test
    
