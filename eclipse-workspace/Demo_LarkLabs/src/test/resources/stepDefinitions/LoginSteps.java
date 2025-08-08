@@ -51,12 +51,13 @@ public class LoginSteps {
 	    
 	    @And("click the submit button")
 	    public void submitbutton() {
-	    	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+	    	  WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(25));
 	        loginPage.clicksubmitoption();
 	    }
 	    
 	    @Then("should see {string}")
 	    public void see_the_expected_message(String expectedResult) {
+			 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(25));
 	    	 String actualResult = loginPage.checkExpectedResult();
 	         Assert.assertEquals(expectedResult, actualResult);
 	    }
