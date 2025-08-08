@@ -81,6 +81,7 @@ public class LoginPage extends BasePage{
 		
 		 public String checkExpectedResult() {
 		        try {
+					WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(35));
 		            return driver.findElement(errormessage).getText();
 		        } catch (Exception e) {
 		            return driver.findElement(loginpage_redirection).getText();
